@@ -1,4 +1,4 @@
-function inp(value){
+function numInput(value){
   var num = document.getElementById("showNum").innerHTML += value;
 
 }
