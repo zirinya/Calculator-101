@@ -82,3 +82,6 @@ main {
   padding: 18px;
   display: grid;
   grid-gap: 15px; }
+  button{
+    cursor: pointer;
+  }
