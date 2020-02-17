@@ -18,31 +18,42 @@
             </div>
             <div class="banner"></div>
             <div class="panel-result">
-                <h4>1</h4>
+                <h4>
+                    <!--no need to limit number bcuz it history-->
+                    <!-- <p class="oldNum" id="oldNum" maxlength="15"  > -->
+                </h4>
                 <!--show past calculate-->
-                <h4 class="show" id="showNum"></h4>
-                <!--show calculate-->
+              
+                <!--show calculate-->  <h4 >
+                    <!-- <p class="show" id="showNum" maxlength="2">  -->
+                    <!--comma first-->
+                        <output class="show" id="showNum"maxlength='6'></output>
+                        <!-- <p class="show" id="showNum" maxlength="2"> -->
+                           
+                </h4>
             </div>
             <div class="button-wrapper">
-                <button type="button" class="operator" onclick="inp('%')">%</button>
-                <button type="button" class="operator" onclick="inp('-')">-</button>
-                <button type="button" class="operator" onclick="clr()">C</button>
-                <button type="button" class="operator"  onclick="inp('/')">÷</button>
-                <button type="button" onclick="inp('7')">7</button>
-                <button type="button" onclick="inp('8')">8</button>
-                <button type="button" onclick="inp('9')">9</button>
-                <button type="button" class=" operator" onclick="inp('*')">&times</button>
-                <button type="button" onclick="inp('4')">4</button>
-                <button type="button" onclick="inp('5')">5</button>
-                <button type="button" onclick="inp('6')">6</button>
-                <button type="button" class=" operator" onclick="inp('-')">-</button>
-                <button type="button" onclick="inp('1')">1</button>
-                <button type="button" onclick="inp('2')">2</button>
-                <button type="button" onclick="inp('3')">3</button>
-                <button type="button" class=" operator" onclick="inp('+')">+</button>
-                <button type="button" onclick="inp('.')">.</button>
-                <button type="button" onclick="inp('0')">0</button>
-                <button type="button" value="=" class="equal" onclick="slo()">=</button>
+                  <!-- <input class="button-wrapper"> -->
+                    <!--rename function i cannot understand what that mean?-->
+                    <input type="button"onclick="numInput('%')" value="%"></input>
+                    <input type="button"onclick="numInput('-')"value="-"></input>
+                    <input type="button"onclick="clr() "value="C"></input>
+                    <input type="button"onclick="numInput('/')"value="÷"></input>
+                    <input type="button"onclick="numInput(7)"value="7"></input>
+                    <input type="button"onclick="numInput(8)"value="8"></input>
+                    <input type="button"onclick="numInput(9)"value="9"></input>
+                    <input type="button"onclick="numInput('*')"value='&times'></input>
+                    <input type="button"onclick="numInput(4)"value="4"></input>
+                    <input type="button"onclick="numInput(5)"value="5"></input>
+                    <input type="button"onclick="numInput(6)"value="6"></input>
+                    <input type="button"onclick="numInput('-')"value="-"></input>
+                    <input type="button"onclick="numInput(1)"value="1"></input>
+                    <input type="button"onclick="numInput(2)"value="2"></input>
+                    <input type="button"onclick="numInput(3)"value="3"></input>
+                    <input type="button"onclick="numInput('+')"value="+"></input>
+                    <input type="button"onclick="numInput('.')"value="."></input>
+                    <input type="button"onclick="numInput(0)"value="0"></input>
+                    <input type="button"class="equal" onclick="cal()" value="="></button>
             </div>
         </div>
     </main>
